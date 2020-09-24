@@ -20,3 +20,10 @@ def signup(request):
     form = UserCreationForm()
     context = {'form': form, 'error_message': error_message}
     return render(request, 'registration/signup.html', context)
+
+
+def about(request):
+    return render(request, 'about.html')
+
+def home(request):
+    return render(request, 'home.html')
